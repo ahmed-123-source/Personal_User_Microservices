@@ -1,4 +1,4 @@
-FROM openjdk:8-jdk-alpine
-EXPOSE 8087
-ADD target/post-0.0.1-SNAPSHOT.jar post.jar
-ENTRYPOINT ["java","-jar","/post.jar"]
+FROM openjdk:8
+EXPOSE 8080
+ADD target/user-0.0.1-SNAPSHOT.jar /user.jar
+ENTRYPOINT ["java","-jar","/user.jar"]
